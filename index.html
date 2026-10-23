@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>매듭 개인정보처리방침</title>
+<meta name="description" content="매듭 앱은 개인정보를 수집하지 않습니다. 모든 기록은 사용자의 기기 안에만 저장됩니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* 레이아웃: 한 줄 기둥(약 36em) 문서. 맨 위 요약 카드 → 조항 목록. 앱과 같은 종이·먹·형광펜 */
+:root {
+  --paper: #FFFDF7;
+  --card: #FFFFFF;
+  --ink: #1E1E2E;
+  --muted: #5E5E72;
+  --line: #EEEADF;
+  --marker: #FFD96B;
+  --accent: #A86E00;
+  --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1B1B24; --card: #24242F; --ink: #F2F0EA; --muted: #A9A9BC;
+    --line: #34343F; --marker: rgba(255, 194, 60, 0.42); --accent: #FFD65C;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1B1B24; --card: #24242F; --ink: #F2F0EA; --muted: #A9A9BC;
+  --line: #34343F; --marker: rgba(255, 194, 60, 0.42); --accent: #FFD65C;
+  color-scheme: dark;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+.page {
+  max-width: 36em;
+  margin: 0 auto;
+  padding-block: 48px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+header { display: flex; flex-direction: column; gap: 10px; }
+.app { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 17px; }
+.app svg { width: 44px; height: 44px; flex: none; }
+h1 { font-size: 30px; line-height: 1.3; margin: 8px 0 0; letter-spacing: -0.02em; text-wrap: balance; }
+.mark { background: linear-gradient(transparent 52%, var(--marker) 52%, var(--marker) 94%, transparent 94%); padding: 0 2px; }
+.dates { color: var(--muted); font-size: 14px; margin: 0; }
+.summary {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.summary h2 { margin: 0; font-size: 16px; color: var(--accent); }
+.summary ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.summary li { display: flex; gap: 10px; }
+.summary li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-top: 0.7em; flex: none; }
+section { display: flex; flex-direction: column; gap: 10px; }
+section h2 { font-size: 19px; margin: 0; line-height: 1.4; text-wrap: balance; }
+section p, section ul { margin: 0; }
+section ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+.muted { color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.table-wrap { overflow-x: auto; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 500; white-space: nowrap; }
+.contact {
+  display: inline-flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px;
+  font-variant-numeric: tabular-nums; user-select: all;
+}
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<main class="page">
+  <header>
+    <div class="app">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="22.5" fill="#FFFFFF" stroke="#EEEADF" stroke-width="2"/>
+        <g fill="none" stroke="#FFC23C" stroke-opacity="0.8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 45 C26 48 33 51 41 51 C49 51 55 47 55 39 C55 31 48 29 42 30"/>
+          <path d="M43 30 C35 31 34 38 36 45 C38 53 42 61 50 64 C55 66 60 66 64 64"/>
+        </g>
+        <path d="M76 57 C79.5 55.5 84 57 84 60.5 C84.5 64 80 66 76.5 64.5 C73.5 63 73 59 76 57 Z" fill="#FFC23C" fill-opacity="0.8"/>
+      </svg>
+      매듭 - 습관과 한 줄 일기
+    </div>
+    <h1><span class="mark">개인정보처리방침</span></h1>
+    <p class="dates">시행일: 2026년 [출시일] · 최종 수정: 2026년 10월 23일</p>
+  </header>
+
+  <div class="summary" role="note">
+    <h2>한눈에 보기</h2>
+    <ul>
+      <li>매듭은 개인정보를 수집하지 않아요. 가입이나 로그인도 없어요.</li>
+      <li>습관, 감정, 일기 같은 기록은 사용자의 아이폰 안에만 저장돼요.</li>
+      <li>기록을 서버로 보내지 않아요. 개발자도 기록을 볼 수 없어요.</li>
+      <li>광고, 분석 도구, 추적 기능이 없어요.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>1. 수집하는 개인정보</h2>
+    <p>매듭(이하 "앱")은 이름, 이메일, 전화번호, 기기 식별자, 위치 정보 등 어떤 개인정보도 수집하지 않습니다. 회원 가입 절차가 없고, 개발자가 운영하는 서버도 없습니다.</p>
+  </section>
+
+  <section>
+    <h2>2. 기기 안에만 저장되는 기록</h2>
+    <p>앱을 쓰면서 입력한 아래 내용은 사용자의 기기 안에만 저장되며, 개발자나 제3자에게 전송되지 않습니다.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>습관</th><td>이름, 아이콘, 색, 반복 요일, 체크한 날짜, 보관 여부</td></tr>
+        <tr><th>하루 기록</th><td>감정 5단계와 감정 메모, 한 줄 일기</td></tr>
+        <tr><th>설정</th><td>블록 켜기·끄기와 순서, 잠금 사용 여부, 알림 시간, 마지막 백업 시각</td></tr>
+      </table>
+    </div>
+    <p>홈 화면 위젯이 기록을 보여줄 수 있도록, 같은 기기 안의 앱 전용 공유 공간(App Group)에 저장합니다. 이 공간도 기기 밖으로 나가지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>3. 앱이 사용하는 기능과 권한</h2>
+    <ul>
+      <li><strong>Face ID·Touch ID 잠금(선택):</strong> 본인 확인은 iOS가 처리하며, 앱은 얼굴이나 지문 정보에 접근할 수 없습니다. 앱은 확인 성공 여부만 전달받습니다.</li>
+      <li><strong>알림(선택):</strong> 하루 마무리 알림은 기기 안에서 예약되는 로컬 알림입니다. 알림을 보내기 위한 서버를 쓰지 않습니다.</li>
+      <li><strong>파일(선택):</strong> 백업 파일을 저장하거나 불러올 때, 사용자가 직접 고른 위치의 파일에만 접근합니다.</li>
+    </ul>
+    <p>각 기능은 사용자가 켤 때만 동작하며, 아이폰 설정 앱에서 언제든 끌 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>4. 백업 파일</h2>
+    <p>설정 → 백업과 복원에서 만든 백업 파일(.json)과 표 파일(.csv)에는 앱의 기록이 그대로 담깁니다. 파일은 사용자가 고른 위치(예: '파일' 앱의 iCloud Drive)에 저장되며, 그 위치의 관리 정책(예: Apple iCloud 약관)을 따릅니다. 파일을 다른 사람과 공유하면 기록도 함께 전달되니 보관에 주의해 주세요.</p>
+    <p>복원하기 직전의 기록은 안전을 위해 기기 안의 '파일' 앱 → 나의 iPhone → 매듭 → 자동 백업 폴더에 자동으로 저장됩니다.</p>
+  </section>
+
+  <section>
+    <h2>5. 제3자 제공과 처리 위탁</h2>
+    <p>수집하는 개인정보가 없으므로 제3자에게 제공하거나 처리를 위탁하지 않습니다. 앱에는 광고, 분석, 크래시 수집 등 외부 회사의 도구(SDK)가 들어 있지 않으며, 다른 회사의 앱이나 웹사이트를 넘나들며 사용자를 추적하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>6. 기록의 보관과 삭제</h2>
+    <p>기록은 사용자가 지우거나 앱을 삭제할 때까지 기기에 남습니다. 습관은 습관 수정 화면에서 기록과 함께 삭제할 수 있고, 앱을 삭제하면 기기 안의 모든 기록이 함께 지워집니다. 개발자는 기록을 갖고 있지 않으므로, 앱을 지운 뒤에는 개발자도 기록을 되살려 드릴 수 없습니다. 필요하면 삭제 전에 백업 파일을 만들어 두세요.</p>
+  </section>
+
+  <section>
+    <h2>7. 아동의 개인정보</h2>
+    <p>앱은 누구의 개인정보도 수집하지 않으므로, 만 14세 미만 아동의 개인정보도 수집하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>8. 방침의 변경</h2>
+    <p>앱의 기능이 바뀌어 이 방침을 고쳐야 할 때는 이 페이지에 변경 내용과 날짜를 먼저 알립니다. 앞으로 iCloud 동기화 같은 기능이 추가되더라도, 기록을 개발자 서버로 보내는 방식은 쓰지 않을 계획입니다.</p>
+  </section>
+
+  <section>
+    <h2>9. 문의</h2>
+    <p>개인정보와 관련한 문의는 아래로 연락해 주세요.</p>
+    <p class="contact">개발자 gengarileo · <span>gengarileo@gmail.com</span></p>
+  </section>
+
+  <footer>© 2026 매듭. 이 방침은 앱 버전 1.0 기준입니다.</footer>
+</main>
+</body>
+</html>
